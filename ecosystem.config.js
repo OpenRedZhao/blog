@@ -24,7 +24,7 @@ module.exports = {
   //自动化部署到服务器
   deploy : {
     production : {
-      user : 'iZ359qgg59l4wfZ',
+      user : 'Administrator',
       host : '115.28.130.168',
       ref  : 'origin/master',
       repo : 'git@github.com:OpenRedZhao/blog.git',
