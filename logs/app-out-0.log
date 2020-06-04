@@ -664,6 +664,7 @@
   status: 401,
   inner: { message: 'No authorization token was found' } }
 2020-06-03 22:44:09: [0mGET /favicon.ico [33m401 [0m1.429 ms - 37[0m
+<<<<<<< HEAD
 2020-06-04 18:05:37: [0mGET /api/article/allList [36m304 [0m295.717 ms - -[0m
 2020-06-04 18:05:37: { UnauthorizedError: No authorization token was found
     at middleware (C:\Users\ZKH\Desktop\web\Node\server\node_modules\express-jwt\lib\index.js:76:21)
@@ -1445,9 +1446,27 @@
     at SendStream.error (C:\Users\ZKH\Desktop\web\Node\server\node_modules\serve-static\index.js:121:7)
     at SendStream.emit (events.js:198:13)
     at SendStream.error (C:\Users\ZKH\Desktop\web\Node\server\node_modules\send\index.js:270:17)
+=======
+2020-06-04 12:02:46: [0mGET /api/article/allList [32m200 [0m521.640 ms - 1335[0m
+2020-06-04 12:02:46: { UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\ZKH\Desktop\web\Node\server\blog\node_modules\express-jwt\lib\index.js:76:21)
+    at C:\Users\ZKH\Desktop\web\Node\server\blog\node_modules\express-unless\index.js:47:5
+    at Layer.handle [as handle_request] (C:\Users\ZKH\Desktop\web\Node\server\blog\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\ZKH\Desktop\web\Node\server\blog\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\ZKH\Desktop\web\Node\server\blog\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\ZKH\Desktop\web\Node\server\blog\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\ZKH\Desktop\web\Node\server\blog\node_modules\express\lib\router\index.js:275:10)
+    at SendStream.error (C:\Users\ZKH\Desktop\web\Node\server\blog\node_modules\serve-static\index.js:121:7)
+    at SendStream.emit (events.js:198:13)
+    at SendStream.error (C:\Users\ZKH\Desktop\web\Node\server\blog\node_modules\send\index.js:270:17)
+>>>>>>> 97ba8397326001e133dd522746d4f7bb818c8105
   name: 'UnauthorizedError',
   message: 'No authorization token was found',
   code: 'credentials_required',
   status: 401,
   inner: { message: 'No authorization token was found' } }
+<<<<<<< HEAD
 2020-06-04 20:13:05: [0mGET /favicon.ico [33m401 [0m8.184 ms - 37[0m
+=======
+2020-06-04 12:02:46: [0mGET /favicon.ico [33m401 [0m7.913 ms - 37[0m
+>>>>>>> 97ba8397326001e133dd522746d4f7bb818c8105
