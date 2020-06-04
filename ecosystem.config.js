@@ -28,7 +28,7 @@ module.exports = {
       host : '115.28.130.168',
       ref  : 'origin/master',
       repo : 'git@github.com:OpenRedZhao/blog.git',
-      path : '/item',
+      path : '/item/blog',
       ssh_options: "StrictHostKeyChecking=no",
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production',
       "env": {
