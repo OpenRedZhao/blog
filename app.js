@@ -28,7 +28,7 @@ app.use(expressJWT({
   secret: PRIVATE_KEY
  }).unless({
   //⽩名单,除了这⾥写的地址，其他的URL都需要验证
-  path: ['/api/user/register','/api/user/login', '/api/user/upload', '/api/article/allList', '/api/article/detail', '/api/comment/list'] 
+  path: ['/api/user/register','/api/user/login', '/api/user/upload', '/api/article/allList', '/api/article/search','/api/article/detail', '/api/comment/list'] 
  }));
 
 app.use('/api/article', artRouter);

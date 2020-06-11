@@ -29,7 +29,7 @@ router.post('/login', async(req, res, next) => {
   try {
     let user =  await querySql('select * from user where username = ?', [username])
     if(!user|| user.length === 0) {
-      res.send({code:0, msg:'该账号不存在'})
+      res.send({code:-1, msg:'该账号不存在'})
     }else{
       password = md5(`${password}${PWD_SALT}`)
       let result = await querySql('select * from user where username = ? and password = ?', [username, password])
