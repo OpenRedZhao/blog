@@ -1,4 +1,4 @@
-var express = require('express');
+﻿var express = require('express');
 var router = express.Router();
 const querySql = require('../db/index')
 const {PWD_SALT, PRIVATE_KEY, EXPIRESD} = require('../utils/constant')
@@ -63,7 +63,7 @@ router.get('/info', async(req, res, next) => {
 router.post('/upload', upload.single('head_img'), async(req, res, next) => {
   console.log(req.file)
   let imgPath = req.file.path.split('public')[1] //分割前部分看作数组 0 后部分看作数组 1
-  let imgUrl = 'http://127.0.0.1:3000' + imgPath //地址拼接
+  let imgUrl = 'http://115.28.130.168:3000' +  imgPath //地址拼接
   res.send({code:0, msg:'上传成功', data:imgUrl})
 });
 

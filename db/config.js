@@ -14,8 +14,8 @@ dbOption = {
  connectionLimit: 10,
  host: '115.28.130.168',
  user: 'root',
- password: '123456',
+ password: 'Zkh123',
  port: '3306',
- database: 'mark_blog'
+ database: 'blog'
 }
 module.exports = dbOption
